@@ -1,0 +1,46 @@
+version: 4.1.43
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Navigate to example.com.
+    commands: []
+  - prompt: Assert that the title of the page is "Example Domain".
+    commands:
+      - command: assert
+        expect: the title of the page is "Example Domain"
+  - prompt: >-
+      Assert that the main text is displayed properly on the page.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: >-
+          the main text is "Example Domain. This domain is for use in
+          illustrative examples in documents. You may use this domain in
+          literature without prior coordination or asking for permission."
+  - prompt: >-
+      Assert that the main text is displayed properly on the page.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: >-
+          the main text is "Example Domain. This domain is for use in
+          illustrative examples in documents. You may use this domain in
+          literature without prior coordination or asking for permission."
+  - prompt: >-
+      Assert that the main text is displayed properly on the page.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: >-
+          the main text is "Example Domain. This domain is for use in
+          illustrative examples in documents. You may use this domain in
+          literature without prior coordination or asking for permission."
+  - prompt: >-
+      Assert that the main text is displayed properly on the page.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: >-
+          the main text is "Example Domain. This domain is for use in
+          illustrative examples in documents. You may use this domain in
+          literature without prior coordination or asking for permission."
