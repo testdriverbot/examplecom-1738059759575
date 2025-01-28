@@ -1,0 +1,25 @@
+version: 4.1.43
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: hover-text
+        text: example.com
+        description: address bar in Google Chrome
+        action: click
+  - prompt: Navigate to example.com.
+    commands:
+      - command: press-keys
+        keys:
+          - f5
+  - prompt: Click on the "More information" link.
+    commands:
+      - command: hover-text
+        text: More information
+        description: link to more information on the example domain page
+        action: click
+  - prompt: >-
+      Assert that the linked page loads without errors.  # Use the content of
+      the file from the environment
+    commands:
+      - command: assert
+        expect: Example Domains is visible on the page
